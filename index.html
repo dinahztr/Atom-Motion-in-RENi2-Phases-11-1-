@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atom Motion</title>
+    <style>
+        /* Globale Schriftart und Hintergrundfarbe */
+        body {
+            font-family: 'Times New Roman', serif; /* Verwende explizit serif */
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            text-align: center;
+            font-size: 18px; /* Größere Standardschrift */
+        }
+
+        h1 {
+            font-size: 3rem; /* Deutlich größerer Header */
+            color: #333;
+            margin-bottom: 1rem;
+            font-weight: bold; /* Fettere Schrift für den Titel */
+        }
+
+        /* Flexbox für GIF-Container */
+        .gif-container {
+            display: flex;
+            justify-content: center; /* Zentriere die GIFs */
+            align-items: flex-start; /* Bilder oben ausrichten */
+            gap: 40px; /* Mehr Abstand zwischen den Bildern */
+            margin: 20px auto;
+            padding: 0 20px;
+            max-width: 98%; /* Nutze fast die gesamte Breite */
+        }
+
+        /* Styling für einzelne GIF-Blöcke */
+        .gif-block {
+            text-align: center;
+            flex: 1; /* Flexible Größe für jedes GIF */
+            max-width: 48%; /* Nutze 45% der Breite pro GIF */
+        }
+
+        .gif-block img {
+            width: 100%; /* Bilder füllen die Box */
+            height: auto; /* Proportionen beibehalten */
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .gif-block h2 {
+            font-size: 1.5rem; /* Größere Schrift für die Untertitel */
+            color: #555;
+            margin-top: 10px;
+            font-weight: normal; /* Normale Schriftstärke für Untertitel */
+        }
+
+        /* Responsives Design */
+        @media (max-width: 1000px) {
+            .gif-container {
+                flex-direction: column; /* GIFs untereinander auf kleineren Bildschirmen */
+                gap: 30px; /* Mehr Abstand zwischen den Bildern */
+            }
+
+            .gif-block {
+                max-width: 100%; /* Volle Breite */
+            }
+
+            .gif-block img {
+                width: 100%; /* Bilder füllen den Container */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Atom Motion in RENi2 Phases - [103]</h1>
+    <div class="gif-container">
+        <!-- GIF 1 -->
+        <div class="gif-block">
+            <img src="[11-1]_Plane_View.gif" alt="Angle View Animation">
+            <h2>Angle View</h2>
+        </div>
+
+        <!-- GIF 2 -->
+        <div class="gif-block">
+            <img src="[11-1]_Plane.gif" alt="Axis Animation">
+            <h2>Axis View</h2>
+        </div>
+    </div>
+</body>
+</html>
